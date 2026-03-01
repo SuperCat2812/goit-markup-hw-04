@@ -52,7 +52,7 @@ button:focus {
 }
 
 .container {
-  width: 1158px;
+  width: 1440px;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -95,7 +95,6 @@ button:focus {
 
 .navigation {
   display: flex;
-  /* gap: 76px; */
   align-items: center;
 }
 
@@ -142,6 +141,12 @@ button:focus {
   color: #404bbf;
 }
 
+.menu-link:active {
+  color: #404bbf;
+border-bottom: 4px solid #404bbf;
+border-radius: 2px;
+}
+
 .contacts {
   font-style: normal;
 }
@@ -174,12 +179,13 @@ button:focus {
   letter-spacing: 0.02em;
   line-height: 1.07;
   max-width: 496px;
-  /* margin: 0 auto; */
 }
 
 .hero-section {
   background-color: #2e2f42;
   padding: 188px 0 188px;
+  background-image: linear-gradient( rgba(46, 47, 66, 0.7)), url(../images/hero_image.jpg) ;
+  background-size: cover;
 }
 
 .hero-section .container {
@@ -217,6 +223,17 @@ button:focus {
   width: calc((100% - 72px) / 4);
 }
 
+.features-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 112px;
+  background-color: #f4f4fd;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
 .features-item-name {
   margin-bottom: 8px;
 }
@@ -226,6 +243,7 @@ button:focus {
 .team-list {
   display: flex;
   gap: 24px;
+  justify-content: center;
 }
 
 .team-thumb {
@@ -240,6 +258,7 @@ button:focus {
 .team-item {
   background-color: #fff;
   border-radius: 0px 0px 4px 4px;
+  box-shadow:0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08) ;
 }
 
 .team-item-name {
@@ -253,6 +272,30 @@ button:focus {
 
 .team-position {
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
+}
+
+.social {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+}
+
+.social-link {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  background-color: #4d5ae5;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.social-link:hover,
+.social-link:focus {
+  background-color: #404bbf;
 }
 
 /* PORTFOLIO */
@@ -305,7 +348,7 @@ button:focus {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
-  padding: 24px 0;
+
 }
 
 .footer .footer-logo span {
@@ -316,4 +359,26 @@ button:focus {
   letter-spacing: 0.02em;
   color: #f4f4fd;
   width: 264px;
+}
+
+.footer-container {
+  display: flex;
+}
+
+.logo-container{
+    margin-right: 120px;
+}
+.social-footer{
+  display: flex;
+  flex-direction: column;
+}
+
+.social-footer-title{
+  margin-bottom: 16px;
+  color: #f4f4fd;
+}
+
+.social-footer-list{
+  display: flex;
+  gap: 16px;
 }
