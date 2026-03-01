@@ -328,8 +328,8 @@ button:focus {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.team .social-link:hover,
-.team .social-link:focus {
+.team .social-link:focus,
+.team .social-link:hover {
   background-color: #404bbf;
 }
 
