@@ -327,13 +327,15 @@ button:focus {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.social-link:focus,
+.social-link:focus{
+  background-color: #404bbf;
+}
 .social-link:hover {
   background-color: #404bbf;
 }
 
 .social-link-icon {
-  fill: #f4f4f4;
+  fill: #f4f4fd;
 }
 
 /* PORTFOLIO */
@@ -382,8 +384,8 @@ button:focus {
   background-color: #4d5ae5;
 }
 
-.overlay-paragraf:hover,
-.overlay-paragraf:focus {
+.cart-item:hover
+.overlay-paragraf{
   transform: translateY(0%);
 }
 
@@ -432,6 +434,8 @@ button:focus {
 
 .footer-container {
   display: flex;
+    align-items: baseline;
+
 }
 
 .logo-container {
@@ -446,13 +450,12 @@ button:focus {
   margin-bottom: 16px;
   color: #fff;
   font-weight: 500;
-  letter-spacing: 0,02em;
+  letter-spacing: 0.02em;
 }
 
 .social-footer-list {
   display: flex;
   gap: 16px;
-  align-items: baseline;
   fill: #f4f4fd;
 }
 
