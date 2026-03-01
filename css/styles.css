@@ -346,6 +346,7 @@ button:focus {
 
 .cart-item {
   flex-basis: calc((100% - 48px) / 3);
+   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow:
     0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16),
@@ -381,8 +382,8 @@ button:focus {
   background-color: #4d5ae5;
 }
 
-.cart-photo:hover .overlay-paragraf,
-.cart-photo:focus .overlay-paragraf {
+.overlay-paragraf:hover,
+.overlay-paragraf:focus {
   transform: translateY(0%);
 }
 
@@ -443,10 +444,19 @@ button:focus {
 
 .social-footer-title {
   margin-bottom: 16px;
-  color: #f4f4fd;
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0,02em;
 }
 
 .social-footer-list {
   display: flex;
   gap: 16px;
+  align-items: baseline;
+  fill: #f4f4fd;
+}
+
+.social-footer-link:hover,
+.social-footer-link:focus{
+  background-color: #31d0aa;
 }
